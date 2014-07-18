@@ -110,6 +110,9 @@ let maplocalleader = "\\"
 nnoremap <leader>a :Ack!
 " This one is handy: In case I forgot sudo before editing..
 noremap <leader>ww :w !sudo tee % > /dev/null<CR>
+" Switch Buffers with tab and shift-tab
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
 
 
 " #================ Plugin Settings =======================

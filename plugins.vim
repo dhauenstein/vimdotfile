@@ -71,6 +71,9 @@ Plugin 'docunext/closetag.vim'
 Plugin 'mattn/emmet-vim'
 " dbext for Rails development
 Plugin 'vim-scripts/dbext.vim'
+" rails spec Plugins
+Plugin 'thoughtbot/vim-rspec'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
