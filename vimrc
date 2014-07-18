@@ -30,7 +30,7 @@ end
 set number		" I want to see line numbers
 set numberwidth=3	" Only 3 chars wide
 set textwidth=0		" No wrapping per default
-set nowrap		" No warpping per default
+set wrap		" Wrapping per default
 set showcmd		" Show command in cmdline
 set showmatch		" Show matching brackets, needs more finetuning? (matchtime)
 set ruler		" Show line and column

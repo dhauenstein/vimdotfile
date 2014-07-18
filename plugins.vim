@@ -67,6 +67,8 @@ Plugin 'bling/vim-airline'
 
 " Close Tags 
 Plugin 'docunext/closetag.vim'
+" Emmet - Zencoding for html
+Plugin 'mattn/emmet-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
