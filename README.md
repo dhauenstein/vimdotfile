@@ -1,5 +1,5 @@
 ## About
-This is my personal collection of VIM configs and plugins. Feel free to use them, anyhow use them at you own peril :)
+This is my personal collection of VIM configs and plugins. Feel free to use them, anyhow use them at your own peril :)
 
 ## Installation
 

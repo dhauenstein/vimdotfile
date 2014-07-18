@@ -48,7 +48,7 @@ hi SpellErrors guibg=red guifg=black ctermbg=red ctermfg=black
 
 " Ignore these files when tab completion is active
 set wildignore=.svn,CVS,.git,.hg,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
-set shell=/bin/zsh	" I use zsh as my login shell
+set shell=/bin/sh	" I use zsh as my login shell, but need to set this to sh to work with rvm
 set autowriteall	" Make sure that all files are written once I switch with :next or :make
 set hidden		" Enable multiple modified butters
 set history=1000
@@ -154,3 +154,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" Define OpenURL Command
+command -bar -nargs=1 OpenURL :!open <args>
