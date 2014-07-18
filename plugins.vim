@@ -65,7 +65,8 @@ Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-repeat'
 Plugin 'bling/vim-airline'
 
-
+" Close Tags 
+Plugin 'docunext/closetag.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
