@@ -23,7 +23,7 @@ let g:ctrlp_clear_cache_on_exit = 1
 " ctrlp leaves stale caches behind if there is another vim process runnin
 " which didn't use ctrlp. so we clear all caches on each new vim invocation
 cal ctrlp#clra()
-let g:ctrlp_max_height = 40
+let g:ctrlp_max_height = 8
 
 " Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -35,3 +35,7 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tabline#enabled = 1
+" DelimiMate
+
+" Disable for now...
+let g:loaded_delimimate = 1

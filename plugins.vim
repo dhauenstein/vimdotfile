@@ -73,6 +73,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/dbext.vim'
 " rails spec Plugins
 Plugin 'thoughtbot/vim-rspec'
+" Sinatra Plugin 
+Plugin 'hallison/vim-ruby-sinatra'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

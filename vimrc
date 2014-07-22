@@ -160,3 +160,7 @@ nnoremap <C-l> <C-w>l
 
 " Define OpenURL Command
 command -bar -nargs=1 OpenURL :!open <args>
+
+" #================  Functions =======================
+source ~/.vim/functions.vim
+" ===================== Misc ==========================
