@@ -24,7 +24,7 @@ Plugin 'tpope/vim-fugitive'
 " Syntax Checking on save
 Plugin 'scrooloose/syntastic'
 " Snippets 4 life
-Plugin 'msanders/snipmate.vim'
+"Plugin 'msanders/snipmate.vim'
 " Another must have: surround
 Plugin 'tpope/vim-surround'
 " Ack for quick Searching
@@ -36,7 +36,7 @@ Plugin 'greplace.vim'
 " Add endlines automatically
 Plugin 'tpope/vim-endwise'
 " And closing of quotes, parenthesis, baracktes.. do I need this really?
-Plugin 'Raimondi/delimitMate'
+"Plugin 'Raimondi/delimitMate'
 " Ruby/Rails stuff
 " Mother of all rails Plugins
 Plugin 'tpope/vim-rails'
@@ -60,6 +60,10 @@ Plugin 'tpope/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'vitaly/vim-syntastic-coffee'
 Plugin 'fatih/vim-go'
+" Addon for gocode
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+" Supertab for code completion
+"Plugin 'ervandew/supertab'
 
 " Enhancements
 Plugin 'tpope/vim-repeat'
@@ -75,6 +79,15 @@ Plugin 'vim-scripts/dbext.vim'
 Plugin 'thoughtbot/vim-rspec'
 " Sinatra Plugin 
 Plugin 'hallison/vim-ruby-sinatra'
+" matchit 
+Plugin 'vim-scripts/matchit.zip'
+" Jade Highlighter
+Plugin 'digitaltoad/vim-jade'
+" Support for .editorconfig files
+Plugin 'editorconfig/editorconfig-vim'
+" Ultisnips
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

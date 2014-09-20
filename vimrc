@@ -1,5 +1,7 @@
 " Mother of all settings
 set nocompatible              " be iMproved, required
+" Exclude Clipboard for faster startup
+set clipboard=exclude:.*
 " ================ Vundle Plugins ===========================
  source ~/.vim/plugins.vim
 " ================ Settings ==============================
@@ -107,7 +109,7 @@ let maplocalleader = "\\"
 
 " ================== Shortcuts ============================
 
-nnoremap <leader>a :Ack!
+nnoremap <leader>A :Ack!
 " This one is handy: In case I forgot sudo before editing..
 noremap <leader>ww :w !sudo tee % > /dev/null<CR>
 " Switch Buffers with tab and shift-tab
@@ -164,3 +166,12 @@ command -bar -nargs=1 OpenURL :!open <args>
 " #================  Functions =======================
 source ~/.vim/functions.vim
 " ===================== Misc ==========================
+set smartindent
+
+" ===================== Autocmd  ==========================
+" Format html Files when reading and writing
+autocmd BufRead,BufWritePre *.html normal gg=G
+
+" ===================== Language specific stuff ==========================
+" Make 'go build' the default makeprg for go 
+au Filetype go set makeprg=go\ build\ ./...
