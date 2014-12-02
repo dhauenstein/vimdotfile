@@ -16,7 +16,7 @@ Plugin 'scrooloose/nerdcommenter'
 " ctrlp is the way to go for fuzzy opening/finding files
 Plugin 'kien/ctrlp.vim'
 " Popup completion menu (intellisense kinda..)
-Plugin 'AutoComplPop'
+"Plugin 'AutoComplPop'
 " Taglist
 Plugin 'taglist.vim'
 " Git integration
@@ -44,7 +44,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 " rake integration
 Plugin 'tpope/vim-rake'
-" Custom textobject for ruby blocks 
+" Custom textobject for ruby blocks
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'kana/vim-textobj-user'
 " Toggle ruby blocks style
@@ -69,7 +69,7 @@ Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'tpope/vim-repeat'
 Plugin 'bling/vim-airline'
 
-" Close Tags 
+" Close Tags
 Plugin 'docunext/closetag.vim'
 " Emmet - Zencoding for html
 Plugin 'mattn/emmet-vim'
@@ -77,17 +77,23 @@ Plugin 'mattn/emmet-vim'
 Plugin 'vim-scripts/dbext.vim'
 " rails spec Plugins
 Plugin 'thoughtbot/vim-rspec'
-" Sinatra Plugin 
+" Sinatra Plugin
 Plugin 'hallison/vim-ruby-sinatra'
-" matchit 
+" matchit
 Plugin 'vim-scripts/matchit.zip'
 " Jade Highlighter
 Plugin 'digitaltoad/vim-jade'
 " Support for .editorconfig files
 Plugin 'editorconfig/editorconfig-vim'
 " Ultisnips
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+"Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'
+" YouCompleteMe
+"Plugin 'Valloric/YouCompleteMe'
+" Tagbar
+Plugin 'majutsushi/tagbar'
+" Neocomplete, because YCM sucks on Yosemite
+Plugin 'Shougo/neocomplete.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

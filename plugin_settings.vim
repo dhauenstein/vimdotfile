@@ -47,6 +47,7 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 " vim-go
 let g:go_auto_type_info = 0
+let g:go_fmt_command = "goimports"
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <leader>gd <Plug>(go-doc)
 au FileType go nmap <leader>gv <Plug>(go-doc-vertial)
@@ -59,5 +60,27 @@ au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)o
 
-" ultisnip
-"let g:UltiSnipsListSnippets = "<tab>"
+"" ultisnip
+""" Set ultisnips triggers
+""let g:UltiSnipsListSnippets = "<tab>"
+"let g:UltiSnipsExpandTrigger="<c-j>"                                            
+"let g:UltiSnipsJumpForwardTrigger="<tab>"                                       
+"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"          
+"" UltiSnips completion function that tries to expand a snippet. If there's no
+"" snippet for expanding, it checks for completion window and if it's
+"" shown, selects first element. If there's no completion window it tries to
+"" jump to next placeholder. If there's no placeholder it just returns TAB key 
+""function! g:UltiSnips_Complete()
+    ""call UltiSnips_ExpandSnippet()
+    ""if g:ulti_expand_res == 0
+        ""if pumvisible()
+            ""return "\<C-n>"
+        ""else
+            ""call UltiSnips_JumpForwards()
+            ""if g:ulti_jump_forwards_res == 0
+               ""return "\<TAB>"
+            ""endif
+        ""endif
+    ""endif
+    ""return ""
+""endfunction

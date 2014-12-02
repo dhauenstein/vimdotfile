@@ -36,8 +36,8 @@ set wrap		" Wrapping per default
 set showcmd		" Show command in cmdline
 set showmatch		" Show matching brackets, needs more finetuning? (matchtime)
 set ruler		" Show line and column
-set wildmenu		" Activate TAB completion
-set wildmode=longest:full,full	" wildmenu settings
+"set wildmenu		" Activate TAB completion
+"set wildmode=longest:full,full	" wildmenu settings
 set visualbell		" Visual bell as I rarely need the beep
 set laststatus=2	" Always show statusline at least 2 rows
 set listchars=tab:▷⋅,trail:·,eol:$	" Display those special chars, may need some tweaking
@@ -56,7 +56,7 @@ set hidden		" Enable multiple modified butters
 set history=1000
 set autoread		" Autmatically re-read file which changed on disk and has no changes in vim
 set backspace=indent,eol,start		" Make backspace work properly in insert mode
-set completeopt=menuone,preview		" Display completion menu even for only one result
+"set completeopt=menuone,preview		" Display completion menu even for only one result
 let bash_is_sh=1	" Syntax shell files as bash scripts
 set cinoptions=:0,(s,u0,U1,g0,t0	" Indentation options for C files
 set modelines=5		" Nr of lines to check for vim: directives in file
@@ -82,9 +82,9 @@ set smartcase		" Detect case and act super smart when searching
 
 
 " Omnicomplete
-set omnifunc=syntaxcomplete#Complete
-let g:rubycomplete_buffer_loading = 0
-let g:rubycomplete_class_in_global = 1
+"set omnifunc=syntaxcomplete#Complete
+"let g:rubycomplete_buffer_loading = 0
+"let g:rubycomplete_class_in_global = 1
 
 " Directory Settings
 call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1') " Create undo directory
@@ -175,3 +175,6 @@ autocmd BufRead,BufWritePre *.html normal gg=G
 " ===================== Language specific stuff ==========================
 " Make 'go build' the default makeprg for go 
 au Filetype go set makeprg=go\ build\ ./...
+
+" =========== omnicomplete always on ========================
+"let g:neocomplete#enable_at_startup = 1
