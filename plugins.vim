@@ -36,7 +36,7 @@ Plugin 'greplace.vim'
 " Add endlines automatically
 Plugin 'tpope/vim-endwise'
 " And closing of quotes, parenthesis, baracktes.. do I need this really?
-"Plugin 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 " Ruby/Rails stuff
 " Mother of all rails Plugins
 Plugin 'tpope/vim-rails'
@@ -61,9 +61,10 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'vitaly/vim-syntastic-coffee'
 Plugin 'fatih/vim-go'
 " Addon for gocode
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+"Plugin 'nsf/gocode' , {'rtp': 'vim/'}
+Plugin 'Blackrush/vim-gocode'
 " Supertab for code completion
-"Plugin 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 
 " Enhancements
 Plugin 'tpope/vim-repeat'
@@ -86,15 +87,22 @@ Plugin 'digitaltoad/vim-jade'
 " Support for .editorconfig files
 Plugin 'editorconfig/editorconfig-vim'
 " Ultisnips
-"Plugin 'SirVer/ultisnips'
-"Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 " YouCompleteMe
 "Plugin 'Valloric/YouCompleteMe'
 " Tagbar
 Plugin 'majutsushi/tagbar'
 " Neocomplete, because YCM sucks on Yosemite
 Plugin 'Shougo/neocomplete.vim'
+" ctags for go
+Plugin 'jstemmer/gotags'
+" godef fot better global tags
+Plugin 'dgryski/vim-godef'
+" Colors in CSS
+"Plugin 'css_color'
+"Plugin 'skammer/vim-css-color'
+Plugin 'ap/vim-css-color'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-

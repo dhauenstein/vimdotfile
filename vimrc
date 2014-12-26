@@ -9,7 +9,7 @@ set clipboard=exclude:.*
 filetype plugin indent on
 syntax on
 set background=light
-colorscheme vividchalk
+colorscheme molokai
 highlight Search cterm=None ctermfg=black ctermbg=red
 set cursorline
 set shortmess=Ilmnrx
@@ -21,7 +21,7 @@ set secure
 " No empty line at the end 
 set noeol
 " Allow editing of binary files
-set binary 
+"set binary 
 
 if has('multi_byte')
   scriptencoding utf-8
@@ -62,8 +62,8 @@ set cinoptions=:0,(s,u0,U1,g0,t0	" Indentation options for C files
 set modelines=5		" Nr of lines to check for vim: directives in file
 set autoindent		" Activate auto indenting
 
-set ts=4		" Tab spaces
-set sw=4		" Spaces for indent
+set ts=2		" Tab spaces
+set sw=2		" Spaces for indent
 set et			" Tabs == Spaces
 
 set ttimeoutlen=50 	" fast Esc to normal mode
@@ -82,9 +82,9 @@ set smartcase		" Detect case and act super smart when searching
 
 
 " Omnicomplete
-"set omnifunc=syntaxcomplete#Complete
-"let g:rubycomplete_buffer_loading = 0
-"let g:rubycomplete_class_in_global = 1
+set omnifunc=syntaxcomplete#Complete
+let g:rubycomplete_buffer_loading = 0
+let g:rubycomplete_class_in_global = 1
 
 " Directory Settings
 call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1') " Create undo directory
@@ -112,9 +112,9 @@ let maplocalleader = "\\"
 nnoremap <leader>A :Ack!
 " This one is handy: In case I forgot sudo before editing..
 noremap <leader>ww :w !sudo tee % > /dev/null<CR>
-" Switch Buffers with tab and shift-tab
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
+" Switch Buffers with leader tab and shift-tab
+nnoremap <leader><Tab> :bnext<CR>
+nnoremap <leader><S-Tab> :bprevious<CR>
 
 
 " #================ Plugin Settings =======================
@@ -170,11 +170,22 @@ set smartindent
 
 " ===================== Autocmd  ==========================
 " Format html Files when reading and writing
-autocmd BufRead,BufWritePre *.html normal gg=G
+"autocmd BufRead,BufWritePre *.html normal gg=G
 
 " ===================== Language specific stuff ==========================
 " Make 'go build' the default makeprg for go 
 au Filetype go set makeprg=go\ build\ ./...
 
 " =========== omnicomplete always on ========================
-"let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 1
+" ================ disbale auto download of go libraries ====
+let g:go_disable_autoinstall = 0  
+" ================= tagbar toggle =========================
+nmap <leader>< :TagbarToggle<CR> 
+
+au BufRead,BufNewFile *.md set filetype=markdown
+
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=0
