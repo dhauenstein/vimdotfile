@@ -103,6 +103,8 @@ Plugin 'dgryski/vim-godef'
 "Plugin 'css_color'
 "Plugin 'skammer/vim-css-color'
 Plugin 'ap/vim-css-color'
+" Integrate Dash 
+Plugin 'rizzatti/dash.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

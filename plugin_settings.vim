@@ -125,3 +125,7 @@ let g:tagbar_type_go = {
 
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
+
+" Dash 
+:nmap <silent> <leader>d <Plug>DashSearch
+
