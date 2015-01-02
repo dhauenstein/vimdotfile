@@ -105,6 +105,10 @@ Plugin 'dgryski/vim-godef'
 Plugin 'ap/vim-css-color'
 " Integrate Dash 
 Plugin 'rizzatti/dash.vim'
+" Wow, even nodejs support. I smeel hipster..
+Plugin 'moll/vim-node'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/javascript-libraries-syntax.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
