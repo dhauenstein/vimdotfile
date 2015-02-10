@@ -107,6 +107,7 @@ Plugin 'ap/vim-css-color'
 Plugin 'rizzatti/dash.vim'
 " Wow, even nodejs support. I smeel hipster..
 Plugin 'moll/vim-node'
+" And general JS support
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 

@@ -189,3 +189,7 @@ set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=0
+
+"
+"For Angular error msg
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
