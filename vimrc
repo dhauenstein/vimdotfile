@@ -193,3 +193,25 @@ set foldlevel=0
 "
 "For Angular error msg
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]
+
+" Switch between the last two files
+nnoremap <leader><leader> <C-^>
+
+" Allow to copy/paste between VIM instances
+"copy the current visual selection to ~/.vbuf
+vmap <leader>y :w! ~/.vbuf<cr>
+
+"copy the current line to the buffer file if no visual selection
+nmap <leader>y :.w! ~/.vbuf<cr>
+
+"paste the contents of the buffer file
+nmap <leader>p :r ~/.vbuf<cr>
+
+" turn off search highlighting (type <leader>n to de-select everything)
+nmap <silent> <leader>n :silent :nohlsearch<cr>
+
+set colorcolumn=80,120
+set magic 
+
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
