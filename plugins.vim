@@ -110,6 +110,14 @@ Plugin 'moll/vim-node'
 " And general JS support
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
+" More stuff
+Plugin 'godlygeek/csapprox'
+" Gitv - Gitk for vim!
+Plugin 'gregsexton/gitv'
+" More git stuff - git in the gutter
+Plugin 'airblade/vim-gitgutter'
+" Bufexplorer
+Plugin 'corntrace/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
