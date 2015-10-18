@@ -52,8 +52,8 @@ let g:go_fmt_command = 'goimports'
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
-au FileType go nmap <Leader>i <Plug>(go-info)
-au FileType go nmap <Leader>l <Plug>(go-lint)
+au FileType go nmap <leader>i <Plug>(go-info)
+au FileType go nmap <leader>l <Plug>(go-lint)
 au FileType go nmap <leader>gd <Plug>(go-doc)
 au FileType go nmap <leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <leader>gb <Plug>(go-doc-browser)
@@ -65,9 +65,9 @@ au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <leader>I <Plug>(go-install)
 au FileType go nmap <leader>v <Plug>(go-vet)
 au FileType go nmap gd <Plug>(go-def)
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)o
+au FileType go nmap <leader>ds <Plug>(go-def-split)
+au FileType go nmap <leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <leader>dt <Plug>(go-def-tab)o
 
 " ultisnip
 "" Set ultisnips triggers

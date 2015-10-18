@@ -118,6 +118,7 @@ Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
 " Bufexplorer
 Plugin 'corntrace/bufexplorer'
-
+" Go Doctor
+Plugin 'godoctor/godoctor.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
