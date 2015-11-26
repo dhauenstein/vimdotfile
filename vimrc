@@ -215,3 +215,5 @@ set magic
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
+
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0

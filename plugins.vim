@@ -118,6 +118,10 @@ Plugin 'gregsexton/gitv'
 Plugin 'airblade/vim-gitgutter'
 " Bufexplorer
 Plugin 'corntrace/bufexplorer'
+" Support for Rust 
+Plugin 'rust-lang/rust.vim'
+" Ginkgo support
+Plugin 'gevans/vim-ginkgo'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -130,3 +130,5 @@ let g:SuperTabDefaultCompletionType = "context"
 " Dash 
 :nmap <silent> <leader>d <Plug>DashSearch
 
+" GOMetalinter
+let g:go_metalinter_enabled = ['vet','vetshadow','golint','errcheck','structcheck','deadcode','ineffassign','varcheck']
