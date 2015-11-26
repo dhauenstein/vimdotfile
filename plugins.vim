@@ -122,6 +122,7 @@ Plugin 'corntrace/bufexplorer'
 Plugin 'rust-lang/rust.vim'
 " Ginkgo support
 Plugin 'gevans/vim-ginkgo'
-
+" Go Doctor
+Plugin 'godoctor/godoctor.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
