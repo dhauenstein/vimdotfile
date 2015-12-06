@@ -132,3 +132,5 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " GOMetalinter
 let g:go_metalinter_enabled = ['vet','vetshadow','golint','errcheck','structcheck','deadcode','ineffassign','varcheck']
+" Ctrl-O to toggle tagbar
+nmap <C-O> :TagbarToggle<CR>
