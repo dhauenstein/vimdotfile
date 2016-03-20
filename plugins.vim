@@ -131,5 +131,9 @@ Plugin 'godoctor/godoctor.vim'
 Plugin 'asciidoc/vim-asciidoc'
 " Bats support 
 Plugin 'markcornick/vim-bats.git'
+" Smali Syntax support 
+Plugin 'alderz/smali-vim'
+" PowerShell Syntax 
+Plugin 'PProvost/vim-ps1'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
