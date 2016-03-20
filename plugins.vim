@@ -132,4 +132,5 @@ Plugin 'asciidoc/vim-asciidoc'
 " Bats support 
 Plugin 'markcornick/vim-bats.git'
 " All of your Plugins must be added before the following line
+Plugin 'Konfekt/FastFold'
 call vundle#end()            " required
