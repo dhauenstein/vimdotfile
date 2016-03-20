@@ -109,7 +109,10 @@ Plugin 'rizzatti/dash.vim'
 Plugin 'moll/vim-node'
 " And general JS support
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'pangloss/vim-javascript'
 Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'ternjs/tern_for_vim'
 " More stuff
 Plugin 'godlygeek/csapprox'
 " Gitv - Gitk for vim!
@@ -126,5 +129,7 @@ Plugin 'gevans/vim-ginkgo'
 Plugin 'godoctor/godoctor.vim'
 " Asciidoc 
 Plugin 'asciidoc/vim-asciidoc'
+" Bats support 
+Plugin 'markcornick/vim-bats.git'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
