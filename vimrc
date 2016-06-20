@@ -217,3 +217,5 @@ set magic
 map <leader>pp :setlocal paste!<cr>
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+set cmdheight=2

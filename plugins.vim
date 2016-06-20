@@ -127,6 +127,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'gevans/vim-ginkgo'
 " Go Doctor
 Plugin 'godoctor/godoctor.vim'
+" Go Impl 
+Plugin 'rhysd/vim-go-impl'
 " Asciidoc 
 Plugin 'asciidoc/vim-asciidoc'
 " Bats support 
