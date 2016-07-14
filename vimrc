@@ -224,4 +224,4 @@ map <C-n> :cn<CR>
 map <C-m> :cp<CR>
 nnoremap <leader>a :cclose<CR>
 
-
+set cmdheight=2

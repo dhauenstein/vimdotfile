@@ -128,6 +128,8 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'gevans/vim-ginkgo'
 " Go Doctor
 Plugin 'godoctor/godoctor.vim'
+" Go Impl 
+Plugin 'rhysd/vim-go-impl'
 " Asciidoc 
 Plugin 'asciidoc/vim-asciidoc'
 " Bats support 
@@ -139,4 +141,5 @@ Plugin 'PProvost/vim-ps1'
 " Split/Join Go structs
 Plugin 'AndrewRadev/splitjoin.vim'
 " All of your Plugins must be added before the following line
+Plugin 'Konfekt/FastFold'
 call vundle#end()            " required
