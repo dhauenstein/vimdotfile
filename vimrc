@@ -11,6 +11,8 @@ syntax on
 set background=light
 colorscheme molokai
 highlight Search cterm=None ctermfg=black ctermbg=red
+let g:rehash256 = 1
+let g:molokai_original = 1
 set cursorline
 set shortmess=Ilmnrx
 
@@ -185,7 +187,7 @@ nmap <leader>< :TagbarToggle<CR>
 
 au BufRead,BufNewFile *.md set filetype=markdown
 
-set foldmethod=syntax
+"set foldmethod=syntax
 set foldnestmax=10
 set nofoldenable
 set foldlevel=0
@@ -217,3 +219,9 @@ set magic
 map <leader>pp :setlocal paste!<cr>
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+map <C-n> :cn<CR>
+map <C-m> :cp<CR>
+nnoremap <leader>a :cclose<CR>
+
+

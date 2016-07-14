@@ -60,6 +60,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'vitaly/vim-syntastic-coffee'
 Plugin 'fatih/vim-go'
+Plugin 'fatih/molokai'
 " Addon for gocode
 "Plugin 'nsf/gocode' , {'rtp': 'vim/'}
 Plugin 'Blackrush/vim-gocode'
@@ -135,5 +136,7 @@ Plugin 'markcornick/vim-bats.git'
 Plugin 'alderz/smali-vim'
 " PowerShell Syntax 
 Plugin 'PProvost/vim-ps1'
+" Split/Join Go structs
+Plugin 'AndrewRadev/splitjoin.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -47,11 +47,17 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 " vim-go
 let g:go_fmt_autosave = 1
-let g:go_auto_type_info = 0
+let g:go_auto_type_info = 1
 let g:go_fmt_command = 'goimports'
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_generate_tags = 1
 au FileType go nmap <leader>i <Plug>(go-info)
 au FileType go nmap <leader>l <Plug>(go-lint)
 au FileType go nmap <leader>gd <Plug>(go-doc)
@@ -59,15 +65,41 @@ au FileType go nmap <leader>gv <Plug>(go-doc-vertical)
 au FileType go nmap <leader>gb <Plug>(go-doc-browser)
 au FileType go nmap <leader><space> <Plug>(go-format)
 au FileType go nmap <leader>r <Plug>(go-run)
-au FileType go nmap <leader>b <Plug>(go-build)
+"au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
-au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>T <Plug>(go-test-func)
+au FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
 au FileType go nmap <leader>I <Plug>(go-install)
 au FileType go nmap <leader>v <Plug>(go-vet)
 au FileType go nmap gd <Plug>(go-def)
 au FileType go nmap <leader>ds <Plug>(go-def-split)
 au FileType go nmap <leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <leader>dt <Plug>(go-def-tab)o
+au FileType go nmap <leader>. <Plug>(go-alternate-edit)
+
+"This will add new commands, called :A, :AV, :AS and :AT. Here :A works just
+"like :GoAlternate, it replaces the current buffer with the alternate file.
+":AV will open a new vertical split with the alternate file. :AS will open the
+"alternate file in a new split view and :AT in a new tab. These commands are
+"very productive depending on how you use them, so I think it's useful to have
+"them. 
+autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
+
+" run :GoBuild or :GoTestCompile based on the go file
+function! s:build_go_files()
+  let l:file = expand('%')
+  if l:file =~# '^\f\+_test\.go$'
+    call go#cmd#Test(0, 1)
+  elseif l:file =~# '^\f\+\.go$'
+    call go#cmd#Build(0)
+  endif
+endfunction
+
+autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
+
 
 " ultisnip
 "" Set ultisnips triggers
@@ -132,5 +164,12 @@ let g:SuperTabDefaultCompletionType = "context"
 
 " GOMetalinter
 let g:go_metalinter_enabled = ['vet','vetshadow','golint','errcheck','structcheck','deadcode','ineffassign','varcheck']
+let go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_deadline = "5s"
+
 " Ctrl-O to toggle tagbar
 nmap <C-O> :TagbarToggle<CR>
+" Go Settings 
+autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4 
+let g:go_auto_sameids = 1
